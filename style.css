@@ -1,0 +1,101 @@
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+}
+
+header#nav-header{
+	margin: 10px 20px;
+}
+
+nav#navbar a {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 20px;
+	text-decoration: none;
+	color: black;
+}
+
+nav#navbar a:active {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 20px;
+	background-color: black;
+  	color: white;
+	box-shadow: 2px 2px 5px grey;
+}
+
+nav#navbar a:hover:not(.active) {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 20px;
+	background-color: black;
+  	color: white;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+	width: 70vw
+}
+
+header {
+	font-size: 1.5rem;
+	font-weight: bold;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	margin-bottom: 0.25em
+}
+
+code {
+	background-color: #CCC;
+	display: block;
+	padding: 20px;
+	width:70vw
+}
+
+#web-app{
+    width: 70vw;
+    height: 50vh
+}
+
+#home-page{
+	width: 75vw
+}
+
+img{
+	margin-bottom: 2em
+}
+
+p {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	margin-bottom: 2em
+  }
+
+.responsive-iframe {
+width: 70vw;
+height: 40vw;
+margin-bottom: 5em
+}
