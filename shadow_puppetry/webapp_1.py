@@ -280,6 +280,7 @@ def main():
     controls = THREE.OrbitControls.new(camera, renderer.domElement)
     controls.rotateSpeed = 0
     controls.panSpeed = 0.2
+    controls.enableZoom = False
 
     def createLimitPan(camera, controls, THREE ):
         v = THREE.Vector3.new()
